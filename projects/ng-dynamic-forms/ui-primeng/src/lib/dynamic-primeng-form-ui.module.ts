@@ -19,8 +19,9 @@ import {
     RadioButtonModule,
     RatingModule,
     SliderModule,
-    SpinnerModule
-} from "primeng/primeng";
+    SpinnerModule,
+    FileUploadModule
+} from 'primeng/primeng';
 import { DynamicPrimeNGFormComponent } from "./dynamic-primeng-form.component";
 import { DynamicPrimeNGAutoCompleteComponent } from "./autocomplete/dynamic-primeng-autocomplete.component";
 import { DynamicPrimeNGCalendarComponent } from "./calendar/dynamic-primeng-calendar.component";
@@ -40,6 +41,7 @@ import { DynamicPrimeNGRatingComponent } from "./rating/dynamic-primeng-rating.c
 import { DynamicPrimeNGSliderComponent } from "./slider/dynamic-primeng-slider.component";
 import { DynamicPrimeNGSpinnerComponent } from "./spinner/dynamic-primeng-spinner.component";
 import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-textarea.component";
+import {DynamicPrimeNGUploadComponent} from './upload/dynamic-primeng-upload.component';
 
 @NgModule({
     imports: [
@@ -61,7 +63,8 @@ import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-text
         RadioButtonModule,
         RatingModule,
         SliderModule,
-        SpinnerModule
+        SpinnerModule,
+        FileUploadModule,
     ],
     declarations: [
         DynamicPrimeNGAutoCompleteComponent,
@@ -83,7 +86,8 @@ import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-text
         DynamicPrimeNGRatingComponent,
         DynamicPrimeNGSliderComponent,
         DynamicPrimeNGSpinnerComponent,
-        DynamicPrimeNGTextAreaComponent
+        DynamicPrimeNGTextAreaComponent,
+        DynamicPrimeNGUploadComponent,
     ],
     entryComponents: [
         DynamicPrimeNGAutoCompleteComponent,
@@ -103,7 +107,8 @@ import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-text
         DynamicPrimeNGRatingComponent,
         DynamicPrimeNGSliderComponent,
         DynamicPrimeNGSpinnerComponent,
-        DynamicPrimeNGTextAreaComponent
+        DynamicPrimeNGTextAreaComponent,
+        DynamicPrimeNGUploadComponent,
     ],
     exports: [
         DynamicFormsCoreModule,
@@ -126,7 +131,8 @@ import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-text
         DynamicPrimeNGRatingComponent,
         DynamicPrimeNGSliderComponent,
         DynamicPrimeNGSpinnerComponent,
-        DynamicPrimeNGTextAreaComponent
+        DynamicPrimeNGTextAreaComponent,
+        DynamicPrimeNGUploadComponent,
     ]
 })
 export class DynamicFormsPrimeNGUIModule {

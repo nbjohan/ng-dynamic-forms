@@ -28,6 +28,7 @@ import {
     DYNAMIC_FORM_CONTROL_TYPE_SWITCH,
     DYNAMIC_FORM_CONTROL_TYPE_TEXTAREA,
     DYNAMIC_FORM_CONTROL_TYPE_TIMEPICKER,
+    DYNAMIC_FORM_CONTROL_TYPE_FILE_UPLOAD,
     DynamicFormArrayGroupModel,
     DynamicFormControl,
     DynamicFormControlContainerComponent,
@@ -41,7 +42,7 @@ import {
     DynamicInputModel,
     DynamicSelectModel,
     DynamicTemplateDirective
-} from "@ng-dynamic-forms/core";
+} from '@ng-dynamic-forms/core';
 import { DynamicPrimeNGCheckboxComponent } from "./checkbox/dynamic-primeng-checkbox.component";
 import { DynamicPrimeNGColorPickerComponent } from "./colorpicker/dynamic-primeng-colorpicker.component";
 import { DynamicPrimeNGCalendarComponent } from "./calendar/dynamic-primeng-calendar.component";
@@ -60,6 +61,7 @@ import { DynamicPrimeNGDropdownComponent } from "./dropdown/dynamic-primeng-drop
 import { DynamicPrimeNGSliderComponent } from "./slider/dynamic-primeng-slider.component";
 import { DynamicPrimeNGInputSwitchComponent } from "./input-switch/dynamic-primeng-input-switch.component";
 import { DynamicPrimeNGTextAreaComponent } from "./textarea/dynamic-primeng-textarea.component";
+import {DynamicPrimeNGUploadComponent} from './upload/dynamic-primeng-upload.component';
 
 @Component({
     selector: "dynamic-primeng-form-control",
@@ -111,6 +113,9 @@ export function primeNGUIFormControlMapFn(model: DynamicFormControlModel): Type<
 
         case DYNAMIC_FORM_CONTROL_TYPE_COLORPICKER:
             return DynamicPrimeNGColorPickerComponent;
+
+        case DYNAMIC_FORM_CONTROL_TYPE_FILE_UPLOAD:
+            return DynamicPrimeNGUploadComponent;
 
         case DYNAMIC_FORM_CONTROL_TYPE_DATEPICKER:
             return DynamicPrimeNGCalendarComponent;
